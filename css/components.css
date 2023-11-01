@@ -1,6 +1,9 @@
 #nutritionSearchForm,
 #sleepTrackingForm,
 #vitaminSearchForm {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     margin-bottom: 20px;
 }
 
