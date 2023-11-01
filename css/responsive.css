@@ -10,14 +10,13 @@
 
     .grid-2,
     .grid-3 {
-        grid-template-columns: 1fr; /* Stack items on smaller screens */
+        grid-template-columns: 1fr; 
     }
 
     .footer ul {
-        justify-content: space-around; /* Adjust as per your design needs */
+        justify-content: space-around;
     }
 
-    /* Adjust font sizes, paddings, etc. as needed */
     .content-container,
     .main,
     .card,
@@ -29,12 +28,10 @@
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     /* Adjustments for tablet screens if necessary */
     .grid-2 {
-        grid-template-columns: 1fr 1fr; /* Adjust if needed */
+        grid-template-columns: 1fr 1fr;
     }
 
     .grid-3 {
-        grid-template-columns: 1fr 1fr 1fr; /* Adjust if needed */
+        grid-template-columns: 1fr 1fr 1fr;
     }
-
-    /* Other responsive adjustments as needed */
 }

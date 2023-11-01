@@ -90,8 +90,8 @@
 .navbar {
     overflow: hidden;
     background-color: #555;
-    width: 200px;  /* Adjust this width as necessary */
-    flex: 0 0 200px; /* Adjust width as needed */
+    width: 200px;
+    flex: 0 0 200px;
     overflow: hidden;
 }
 
@@ -105,4 +105,23 @@
 
 .navbar a:hover {
     background-color: #111;
+}
+
+/* Responsive grid */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
 }
