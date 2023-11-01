@@ -73,7 +73,7 @@ body {
 }
 
 .footer {
-    background-color: #333; /* Dark background for the footer */
+    background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
@@ -84,19 +84,43 @@ body {
 }
 
 .footer ul {
-    list-style: none; /* Removes the default list style */
+    list-style: none;
     padding: 0;
+    display: flex;        
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer ul li {
-    margin: 10px 0; /* Adds some space between the links */
+    margin: 5px 15px;
 }
 
 .footer a {
-    color: lightblue; /* Makes the link color stand out against the dark background */
+    color: lightblue;
     text-decoration: none;
 }
 
 .footer a:hover {
-    text-decoration: underline; /* Underlines links on hover for better interactivity */
+    text-decoration: underline;
+}
+
+.bar-chart {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bar {
+    display: inline-block;
+    width: 50px; /* Width of each bar */
+    margin: 0 10px; /* Spacing between bars */
+    text-align: center;
+}
+
+.bar span {
+    position: absolute;
+    bottom: 100%; /* Position the text below the bars */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2px;
+    color: black; /* Text color */
 }
