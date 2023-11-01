@@ -1,0 +1,108 @@
+#nutritionSearchForm {
+    margin-bottom: 20px;
+}
+
+#nutritionSearchForm input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#nutritionSearchForm button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#nutritionSearchForm button:hover {
+    background-color: #555;
+}
+
+#nutritionResults ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#nutritionResults ul li {
+    background-color: #f4f4f4;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.bar-chart {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bar {
+    display: inline-block;
+    width: 50px; /* Width of each bar */
+    margin: 0 10px; /* Spacing between bars */
+    text-align: center;
+}
+
+.bar span {
+    position: absolute;
+    bottom: 100%; /* Position the text below the bars */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2px;
+    color: black; /* Text color */
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer h3 {
+    margin-top: 0;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;        
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer ul li {
+    margin: 5px 15px;
+}
+
+.footer a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #555;
+    width: 200px;  /* Adjust this width as necessary */
+    flex: 0 0 200px; /* Adjust width as needed */
+    overflow: hidden;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #111;
+}

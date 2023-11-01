@@ -3,6 +3,8 @@
 <head>
     <title>Fitness Tracker</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/components.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 <body>
     <div class="header">
@@ -19,7 +21,18 @@
         </div>
         <div class="main">
             <h2>Your Dashboard</h2>
-            <!-- Content: Place forms or data visualization here -->
+
+            <form id="nutritionSearchForm">
+                <input type="text" id="foodInput" placeholder="Enter a food item" required>
+                <button type="submit">Search</button>
+            </form>
+    
+            <div id="nutritionResults">
+                <h3>Food Intake</h3>
+                <ul id="foodList">
+                    <!-- List of foods will be added here -->
+                </ul>
+            </div>
         </div>
     </div>
 

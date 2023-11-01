@@ -1,0 +1,40 @@
+@media screen and (max-width: 600px) {
+    .navbar {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .navbar a {
+        padding: 10px;
+    }
+
+    .grid-2,
+    .grid-3 {
+        grid-template-columns: 1fr; /* Stack items on smaller screens */
+    }
+
+    .footer ul {
+        justify-content: space-around; /* Adjust as per your design needs */
+    }
+
+    /* Adjust font sizes, paddings, etc. as needed */
+    .content-container,
+    .main,
+    .card,
+    .footer {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adjustments for tablet screens if necessary */
+    .grid-2 {
+        grid-template-columns: 1fr 1fr; /* Adjust if needed */
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr 1fr 1fr; /* Adjust if needed */
+    }
+
+    /* Other responsive adjustments as needed */
+}
