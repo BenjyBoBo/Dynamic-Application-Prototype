@@ -13,6 +13,11 @@ body {
     text-align: center;
 }
 
+.header-image {
+    width: 100px;
+    margin: 0 10px;
+}
+
 .content-container {
     display: flex;
 }
