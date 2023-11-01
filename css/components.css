@@ -1,15 +1,20 @@
-#nutritionSearchForm {
+#nutritionSearchForm,
+#vitaminSearchForm {
     margin-bottom: 20px;
 }
 
-#nutritionSearchForm input[type="text"] {
+#nutritionSearchForm input[type="text"],
+#nutritionSearchForm input[type="number"],
+#vitaminSearchForm input[type="text"],
+#vitaminSearchForm input[type="number"] {
     padding: 8px;
     margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-#nutritionSearchForm button {
+#nutritionSearchForm button,
+#vitaminSearchForm button {
     padding: 10px 15px;
     background-color: #333;
     color: white;
@@ -18,21 +23,25 @@
     cursor: pointer;
 }
 
-#nutritionSearchForm button:hover {
+#nutritionSearchForm button:hover,
+#vitaminSearchForm button:hover {
     background-color: #555;
 }
 
-#nutritionResults ul {
+#nutritionResults ul,
+#vitaminResults ul {
     list-style-type: none;
     padding: 0;
 }
 
-#nutritionResults ul li {
+#nutritionResults ul li,
+#vitaminResults ul li {
     background-color: #f4f4f4;
     margin-top: 5px;
     padding: 10px;
     border-radius: 4px;
 }
+
 
 .bar-chart {
     text-align: center;

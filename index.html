@@ -21,20 +21,36 @@
         </div>
         <div class="main">
             <h2>Your Dashboard</h2>
-
+        
             <form id="nutritionSearchForm">
                 <input type="text" id="foodInput" placeholder="Enter a food item" required>
-                <button type="submit">Search</button>
+                <input type="number" id="amountInput" placeholder="Amount (e.g., grams)" required min="1">
+                <button type="submit">Submit</button>
             </form>
-    
+        
             <div id="nutritionResults">
                 <h3>Food Intake</h3>
                 <ul id="foodList">
                     <!-- List of foods will be added here -->
                 </ul>
             </div>
+
+            <form id="vitaminSearchForm">
+                <input type="text" id="vitaminInput" placeholder="Enter a vitamin" required>
+                <input type="number" id="amountInput" placeholder="Amount (e.g., dosage)" required min="1">
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="vitaminResults">
+                <h3>Food Intake</h3>
+                <ul id="vitaminList">
+                    <!-- List of vitamins will be added here -->
+                </ul>
+            </div>
+
         </div>
-    </div>
+        
+
 
     <div class="footer">
         <p>Footer Content</p>
