@@ -71,3 +71,32 @@ body {
     flex-grow: 1;
     padding: 20px;
 }
+
+.footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer h3 {
+    margin-top: 0;
+}
+
+.footer ul {
+    list-style: none; /* Removes the default list style */
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 10px 0; /* Adds some space between the links */
+}
+
+.footer a {
+    color: lightblue; /* Makes the link color stand out against the dark background */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underlines links on hover for better interactivity */
+}
