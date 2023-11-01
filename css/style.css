@@ -13,10 +13,16 @@ body {
     text-align: center;
 }
 
+.content-container {
+    display: flex;
+}
+
 .navbar {
     overflow: hidden;
     background-color: #555;
     width: 200px;  /* Adjust this width as necessary */
+    flex: 0 0 200px; /* Adjust width as needed */
+    overflow: hidden;
 }
 
 .navbar a {
@@ -59,4 +65,9 @@ body {
     background-color: #fff;
     padding: 20px;
     margin-top: 20px;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 20px;
 }
