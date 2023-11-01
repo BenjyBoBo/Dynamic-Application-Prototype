@@ -26,7 +26,6 @@
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Adjustments for tablet screens if necessary */
     .grid-2 {
         grid-template-columns: 1fr 1fr;
     }

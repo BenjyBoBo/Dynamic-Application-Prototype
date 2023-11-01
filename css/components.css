@@ -1,10 +1,12 @@
 #nutritionSearchForm,
+#sleepTrackingForm,
 #vitaminSearchForm {
     margin-bottom: 20px;
 }
 
 #nutritionSearchForm input[type="text"],
 #nutritionSearchForm input[type="number"],
+#sleepTrackingForm input[type="number"],
 #vitaminSearchForm input[type="text"],
 #vitaminSearchForm input[type="number"] {
     padding: 8px;
@@ -14,6 +16,7 @@
 }
 
 #nutritionSearchForm button,
+#sleepTrackingForm button,
 #vitaminSearchForm button {
     padding: 10px 15px;
     background-color: #333;
@@ -24,6 +27,7 @@
 }
 
 #nutritionSearchForm button:hover,
+#sleepTrackingForm button:hover,
 #vitaminSearchForm button:hover {
     background-color: #555;
 }
@@ -42,6 +46,10 @@
     border-radius: 4px;
 }
 
+#sleepTrackingForm label {
+    display: block;
+    margin-top: 10px;
+}
 
 .bar-chart {
     text-align: center;
