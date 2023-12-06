@@ -15,7 +15,7 @@
     height: auto;
 }
 
-body {
+html, body {
     font-family: Arial, serif;
     margin: 0;
     padding: 0;
@@ -24,6 +24,8 @@ body {
 
 .content-container {
     display: flex;
+    flex: 1;
+    position: relative;
 }
 
 .main {
@@ -31,5 +33,9 @@ body {
     padding: 20px;
 }
 
-
-
+.body-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
