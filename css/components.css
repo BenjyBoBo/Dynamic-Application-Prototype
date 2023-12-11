@@ -7,13 +7,20 @@
 
 #nutritionSearchForm input[type="text"],
 #nutritionSearchForm input[type="number"],
-#sleepTrackingForm input[type="number"],
 #vitaminSearchForm input[type="text"],
 #vitaminSearchForm input[type="number"] {
     padding: 8px;
     margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+#sleepTrackingForm input[type="number"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 90px;
 }
 
 #nutritionSearchForm button,
@@ -43,6 +50,7 @@
 #vitaminResults ul li {
     background-color: #f4f4f4;
     margin-top: 5px;
+    max-width: 500px;
     padding: 10px;
     border-radius: 4px;
 }
@@ -50,27 +58,6 @@
 #sleepTrackingForm label {
     display: block;
     margin-top: 10px;
-}
-
-.bar-chart {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.bar {
-    display: inline-block;
-    width: 50px; /* Width of each bar */
-    margin: 0 10px; /* Spacing between bars */
-    text-align: center;
-}
-
-.bar span {
-    position: absolute;
-    bottom: 100%; /* Position the text below the bars */
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 2px;
-    color: black; /* Text color */
 }
 
 .footer {
@@ -107,24 +94,28 @@
     text-decoration: underline;
 }
 
-.navbar {
-    overflow: hidden;
-    background-color: #555;
-    width: 200px;
-    flex: 0 0 200px;
-    overflow: hidden;
+.navbar-nav {
+    flex-direction: column !important;
+    align-items: start;
 }
 
-.navbar a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.nav-item {
+    display: block !important;
 }
 
-.navbar a:hover {
-    background-color: #111;
+.nav-link {
+    width: 100%;
+    text-align: left;
+}
+
+.nav-item.active .nav-link {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Set the color of the toggle button */
+.navbar-toggler {
+    background-color: #333;
 }
 
 /* Responsive grid */

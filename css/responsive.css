@@ -1,36 +1,12 @@
-@media screen and (max-width: 600px) {
-    .navbar {
-        width: 100%;
-        flex: 0 0 100%;
+@media (max-width: 768px) {
+    #sleepTrackingForm {
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    .navbar a {
-        padding: 10px;
-    }
-
-    .grid-2,
-    .grid-3 {
-        grid-template-columns: 1fr; 
-    }
-
-    .footer ul {
-        justify-content: space-around;
-    }
-
-    .content-container,
-    .main,
-    .card,
-    .footer {
-        padding: 10px;
-    }
-}
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    .grid-2 {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .grid-3 {
-        grid-template-columns: 1fr 1fr 1fr;
+    #sleepTrackingForm input[type="number"] {
+        flex: 0 0 250px; /* Set the basis to 250px before wrapping */
+        margin-right: 10px; /* Optional: Add some spacing between fields */
+        margin-bottom: 10px; /* Optional: Add spacing between wrapped lines */
     }
 }
