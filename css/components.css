@@ -1,6 +1,7 @@
 #nutritionSearchForm,
 #sleepTrackingForm,
-#vitaminSearchForm {
+#vitaminSearchForm,
+#searchForm {
     align-items: flex-start;
     margin-bottom: 20px;
 }
@@ -8,7 +9,8 @@
 #nutritionSearchForm input[type="text"],
 #nutritionSearchForm input[type="number"],
 #vitaminSearchForm input[type="text"],
-#vitaminSearchForm input[type="number"] {
+#vitaminSearchForm input[type="number"],
+#searchForm input[type="text"] {
     padding: 8px;
     margin-right: 10px;
     border: 1px solid #ccc;
@@ -25,7 +27,8 @@
 
 #nutritionSearchForm button,
 #sleepTrackingForm button,
-#vitaminSearchForm button {
+#vitaminSearchForm button,
+#searchForm button {
     padding: 10px 15px;
     background-color: #333;
     color: white;
@@ -36,23 +39,39 @@
 
 #nutritionSearchForm button:hover,
 #sleepTrackingForm button:hover,
-#vitaminSearchForm button:hover {
+#vitaminSearchForm button:hover,
+#searchForm button:hover {
     background-color: #555;
 }
 
 #nutritionResults ul,
-#vitaminResults ul {
-    list-style-type: none;
-    padding: 0;
+#vitaminResults ul,
+#searchResults ul {
+    max-height: 300px; /* Adjust as needed */
+    padding: 10px;
 }
 
 #nutritionResults ul li,
-#vitaminResults ul li {
+#vitaminResults ul li,
+#searchResults ul li {
     background-color: #f4f4f4;
     margin-top: 5px;
     max-width: 500px;
     padding: 10px;
     border-radius: 4px;
+}
+
+#searchResults {
+    display: inline-block;
+    max-height: 300px; /* Adjust as needed */
+    min-width: 1000px;
+    margin-right: 10px;
+    overflow-y: auto;
+    border: 1px solid #ccc; /* Optional, for better visibility */
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Courier New', monospace;
 }
 
 #sleepTrackingForm label {
@@ -69,7 +88,7 @@
 }
 
 .footer h3 {
-    margin-top: 0;
+    margin-top: 10;
 }
 
 .footer ul {
@@ -135,4 +154,14 @@
     background-color: #fff;
     padding: 20px;
     margin-top: 20px;
+}
+
+#chartContainer1 img {
+    width: 900px;
+    height: 500px;
+}
+#chartContainer2 img {
+    padding-top: 20px;
+    width: 900px;
+    height: 500px;
 }
